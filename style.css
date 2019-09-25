@@ -97,30 +97,24 @@ input, select {
 
 .header-div {
     margin: 15px;
+    align-self: center;
 }
 
 .header-div p {
     color: lightblue;
     font-family: 'Turret Road', cursive;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
 }
-
-table {
-    margin: 2px;
-    padding: 20%;
-    background: #222222;
-    border: 1px lightgrey;
-    border-spacing: 2px;
-    background-color: lightskyblue;
-}
-
 
 body {
     background-color: #222222;
 }
 
 p {
+    margin: 15px;
     color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
 }
 

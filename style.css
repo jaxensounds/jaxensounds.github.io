@@ -93,28 +93,54 @@ input, select {
     vertical-align:middle;
 }
 
+body {
+    background-color: #1e1e1e;
+}
 
+.nav-wrapper {
+    margin: 0 50;
+    width: 1500px;
+}
 
 .header-div {
-    margin: 15;
+    margin: 15px;
     align-self: center;
 }
 
 .header-div p {
     color: lightblue;
     font-family: 'Turret Road', cursive;
-    font-size: 30;
+    font-size: 30px;
     text-align: center;
 }
 
-body {
-    background-color: #222222;
-}
-
 p {
-    margin: 10;
+    margin: 10px;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    font-size: 15;
+    font-size: 15px;
 }
 
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: lightgrey;
+}
+
+ul {
+    margin: 60px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 100px;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 20px;
+}

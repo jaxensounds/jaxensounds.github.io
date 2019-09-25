@@ -96,14 +96,14 @@ input, select {
 
 
 .header-div {
-    margin: 15px;
+    margin: 15;
     align-self: center;
 }
 
 .header-div p {
     color: lightblue;
     font-family: 'Turret Road', cursive;
-    font-size: 30px;
+    font-size: 30;
     text-align: center;
 }
 
@@ -112,9 +112,9 @@ body {
 }
 
 p {
-    margin: 15px;
+    margin: 10;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    font-size: 15px;
+    font-size: 15;
 }
 

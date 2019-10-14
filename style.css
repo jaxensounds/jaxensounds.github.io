@@ -268,19 +268,18 @@ footer .footer-social img {
 @media only screen and (orientation: landscape) {
 
     header {
-        display: table;
         width: 100%;
         height: 75px;
     }
     
     header .logo {
-        display: table-row;
-    }
-
-    header .logo img {
+        display: inline-block;
         width: 70px;
-        margin-top: 3px;
-        margin-bottom: 0;
+        height: 70px;
+        background-image: url('img/logoblack.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     header .header-brand {
@@ -288,7 +287,8 @@ footer .footer-social img {
     }
     
     header nav {
-        display: table-row;
+        width: 80%;
+        float: right;
     }
 
     header nav ul {

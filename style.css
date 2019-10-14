@@ -93,191 +93,280 @@ input, select {
     vertical-align:middle;
 }
 
+/* own code starts here */
+
+
+/* universal styling */
+
+* {
+    text-decoration: none;
+}
+
 body {
     background-color: #1e1e1e;
 }
 
-.wrapper {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    background-color: #151515;
-}
-
-.header-div {
-    margin: 20px auto;
-    align-self: center;
-}
-
-.header-div p {
-    color: lightblue;
-    font-family: 'Turret Road', cursive;
-    font-size: 35px;
-    text-align: center;
-}
-
-.content {
-    margin: 5px auto;
-}
-
 p {
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 10px;
+    padding: 2px 0;
+    font-family: Raleway;
 }
 
-nav {
-    padding: 5px auto;
-    width: 100%;
-    height: 25px;
-    background-color: lightgrey;
-}
-
-ul {
-    margin: 0 auto;
-    align-content: center;
-    align-self: center;
-}
-
-ul li {
-    margin: 0 auto;
-    list-style: none;
-    display: inline-block;
-    line-height: 25px;
-}
-
-ul li a {
-    display: block;
+a {
     text-decoration: none;
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Raleway', sans-serif;
-    padding: 0 5px;
 }
 
-.banner {
+p, a {
+    color: #dddddd;
+}
+
+header {
+    background-color: #eeeeee;
+
+}
+
+header p, a {
+    color: #111111;
+}
+
+header .header-brand {
+    font-family: Montserrat;
+}
+
+header nav ul li a {
+    font-family: Quicksand;
+}
+
+.index-banner h1 {
+    font-family: Raleway;
+    text-align: center;
+    color: antiquewhite;
+    text-shadow: -1px 1.5px 7px #fff;
+}
+
+.index-banner h2 {
+    font-family: Raleway;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.index-linkbox h3 {
+    font-family: Quicksand;
+    text-align: center;
+    color: rgb(184, 177, 169);
+}
+
+footer {
+    width: calc(100% - 30px);
+    padding: 15px 15px;
+    background-color: #8f8f8f;
+    overflow: hidden;
+}
+
+footer p {
+    color: #000158;
+}
+
+/* mobile design */
+
+header {
+    width: 100%;
+    height: 85px;
+}
+
+header .header-brand {
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header .logo {
     display: none;
 }
 
-.div-responsive {
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 16px;
+}
+
+header nav ul li a {
+    font-size: 18px;
+}
+
+header .header-cases {
+    display: none;
+}
+
+.index-banner {
     width: 100%;
+    height: calc(100vh - 85px);
+    background-image: url('img/bgg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
 }
 
-.nav-responsive {
-    width: 100%;
+.index-banner-table {
+    display: table-cell;
+    vertical-align: middle;
 }
 
-.content-responsive {
-    width: 100%;
+.index-banner h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0;
 }
 
-.content-responsive p {
-    padding: 0px 5px 20px;
-    line-height: 15px;
+.index-banner h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0;
 }
 
-@media only screen and (min-height: 800px) {
-    .header-div p {
-        font-size: 40px;
+.index-linkbox {
+    margin: 15px 15px 0;
+    height: 50px;
+    width: calc(100% - 30px);
+    background-color: #3c3c3c;
+}
+
+.index-linkbox h3 {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+footer .copyrite {
+    font-size: 10px;
+    float: left;
+    line-height: 20px;
+}
+
+footer .footer-social {
+    width: 90px;
+    float: right;
+    line-height: 10px;
+}
+
+footer .footer-social img {
+    width: 20px;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+/* desktop design */
+
+@media only screen and (min-width: 1280px) {
+
+    header {
+        width: 100%;
+        height: 75px;
     }
     
-    .content p {
-        font-size: 15px;
+    header .logo {
+        display: block;
+        width: 70px;
     }
 
-    .content-responsive p {
-        line-height: 17px;
+    header .logo img {
+        width: 70px;
+        margin-top: 3px;
+        margin-bottom: 0;
     }
 
-    .nav-responsive nav {
-        height: 30px;
-    }
-
-    .nav-responsive ul li {
-        line-height: 30px;
-    }
-
-    .nav-responsive ul li a {
-        font-size: 17px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .header-div {
+    header .header-brand {
+        font-size: 24px;
+        font-weight: 700;
+        display: block;
         margin: 0 auto;
-        padding: 0 auto;
+        text-align: left;
+        padding: 0;
     }
-
-    .header-div p {
+    
+    header nav ul {
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    
+    header nav ul li {
+        display: inline-block;
+        list-style: none;
+        padding: 0 16px;
+    }
+    
+    header nav ul li a {
+        font-size: 18px;
+    }
+    
+    header .header-cases {
         display: none;
     }
-
-    .banner {
-        display: block;
+    
+    .index-banner {
         width: 100%;
-    }
-
-    .nav-responsive nav {
-        height: 40px;
-    }
-
-    .nav-responsive ul li {
-        line-height: 40px;
-    }
-
-    .nav-responsive ul li a {
-        font-size: 20px;
+        height: calc(100vh - 85px);
+        background-image: url('img/bgg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
     }
     
-    .content p {
-        font-size: 20px;
+    .index-banner-table {
+        display: table-cell;
+        vertical-align: middle;
     }
-
-    .content-responsive p {
+    
+    .index-banner h1 {
+        font-size: 25px;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    
+    .index-banner h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 5px 0;
+    }
+    
+    .index-linkbox {
+        margin: 15px 15px 0;
+        height: 50px;
+        width: calc(100% - 30px);
+        background-color: #3c3c3c;
+    }
+    
+    .index-linkbox h3 {
+        font-size: 20px;
+        line-height: 50px;
+    }
+    
+    footer .copyrite {
+        font-size: 10px;
+        float: left;
         line-height: 20px;
     }
-}
-
-@media only screen and (min-width: 1020px) {
-    .nav-responsive nav {
-        height: 70px;
-    }
-
-    .nav-responsive ul li {
-        line-height: 70px;
-    }
-
-    .nav-responsive ul li a {
-        font-size: 35px;
+    
+    footer .footer-social {
+        width: 90px;
+        float: right;
+        line-height: 10px;
     }
     
-    .content p {
-        font-size: 30px;
+    footer .footer-social img {
+        width: 20px;
+        margin-left: 5px;
+        margin-bottom: 0;
     }
 
-    .content-responsive p {
-        line-height: 35px;
-    }
-}
-
-@media only screen and (min-height: 720px) and (min-width: 1280px) {
-    .nav-responsive nav {
-        height: 70px;
-    }
-
-    .nav-responsive ul li {
-        line-height: 70px;
-    }
-
-    .nav-responsive ul li a {
-        font-size: 35px;
-    }
-    
-    .content p {
-        font-size: 30px;
-    }
-
-    .content-responsive p {
-        line-height: 35px;
-    }
 }

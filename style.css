@@ -202,7 +202,7 @@ header nav ul li a {
     font-size: 18px;
 }
 
-header .header-cases {
+header .header-projects {
     display: none;
 }
 
@@ -308,7 +308,7 @@ footer .footer-social img {
         font-size: 18px;
     }
     
-    header .header-cases {
+    header .header-projects {
         display: none;
     }
     

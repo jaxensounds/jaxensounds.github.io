@@ -170,7 +170,7 @@ footer p {
 
 header {
     width: 100%;
-    height: 85px;
+    height: 90px;
 }
 
 header .header-brand {
@@ -189,11 +189,12 @@ header .logo {
 header nav ul {
     display: block;
     margin: 0 auto;
-    width: fit-content;
+    width: max-content;
 }
 
 header nav ul li {
     display: inline-block;
+    float: left;
     list-style: none;
     padding: 0 16px;
 }
@@ -266,106 +267,42 @@ footer .footer-social img {
 /* desktop design */
 
 @media only screen and (orientation: landscape) {
-
-    header {
-        width: 100%;
-        height: 75px;
-    }
     
-    header .logo {
-        display: inline-block;
-        width: 70px;
-        height: 70px;
-        background-image: url('img/logoblack.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
     header .header-brand {
         display: none;
     }
-    
-    header nav {
-        width: 80%;
-        float: right;
+
+    header .logo {
+        display: block;
+        margin: 10px 0;
+        align-content: left;
+        line-height: 10px;
+        padding: 0 15px 0 70px;
+        border-right: 3px solid #1e1e1e;
+        float: left;
+    }
+
+    header .logo img {
+        height: 70px;
+        width: 70px;
     }
 
     header nav ul {
-        display: block;
-        margin: 0 auto;
-        width: fit-content;
-    }
-    
-    header nav ul li {
-        display: inline-block;
-        list-style: none;
-        padding: 0 16px;
+        margin: 0;
+        float: left;
+        padding-left: 20px;
     }
     
     header nav ul li a {
+        line-height: 85px;
         font-size: 18px;
     }
-    
-    header .header-projects {
-        display: none;
-    }
-    
-    .index-banner {
-        width: 100%;
-        height: calc(100vh - 85px);
-        background-image: url('img/bgg.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display: table;
-    }
-    
-    .index-banner-table {
-        display: table-cell;
-        vertical-align: middle;
-    }
-    
-    .index-banner h1 {
-        font-size: 25px;
-        font-weight: 700;
-        margin: 10px 0;
-    }
-    
-    .index-banner h2 {
-        font-size: 20px;
-        font-weight: 500;
-        margin: 5px 0;
-    }
-    
-    .index-linkbox {
-        margin: 15px 15px 0;
-        height: 50px;
-        width: calc(100% - 30px);
-        background-color: #3c3c3c;
-    }
-    
-    .index-linkbox h3 {
-        font-size: 20px;
-        line-height: 50px;
-    }
-    
-    footer .copyrite {
-        font-size: 10px;
-        float: left;
-        line-height: 20px;
-    }
-    
-    footer .footer-social {
-        width: 90px;
-        float: right;
-        line-height: 10px;
-    }
-    
-    footer .footer-social img {
-        width: 20px;
-        margin-left: 5px;
-        margin-bottom: 0;
-    }
 
+    header .header-projects {
+        display: block;
+        float: right;
+        font-family: Raleway;
+        font-size: 15px;
+        font-weight: 600;
+    }
 }

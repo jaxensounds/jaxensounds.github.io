@@ -194,7 +194,6 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    float: left;
     list-style: none;
     padding: 0 16px;
 }
@@ -304,5 +303,64 @@ footer .footer-social img {
         font-family: Raleway;
         font-size: 15px;
         font-weight: 600;
+    }
+
+    .index-links {
+        height: calc(100vh - 67px);
+    }
+
+    .index-linkbox {
+        margin: 15px 15px 15px;
+        height: 102px;
+        width: 240px;
+    }
+
+    .index-linkbox h3 {
+        line-height: 100px;
+    }
+
+    .linkbox-1 {
+        background: #fff;
+        padding-left: 0%
+    }
+    
+    .linkbox-2 {
+        background: #ccc;
+        padding-left: 20%;
+    }
+
+    .linkbox-3 {
+        background: #8f8f8f;
+        padding-left: 40%;
+    }
+
+    .linkbox-4 {
+        background: #7f7f7f;
+        padding-left: 60%;
+    }
+
+    .linkbox-5 {
+        background: #5d5d5d;
+        padding-left: 80%;
+    }
+
+    .linkbox-1 a {
+        width: 240px;
+    }
+    
+    .linkbox-2 a {
+        width: 240px;
+    }
+
+    .linkbox-3 a {
+        width: 240px;
+    }
+
+    .linkbox-4 a {
+        width: 240px;
+    }
+
+    .linkbox-5 a {
+        width: 240px;
     }
 }

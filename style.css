@@ -83,7 +83,7 @@ table {
 hr {
     display:block;
     height:1px;
-    border:0;  
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
@@ -266,7 +266,7 @@ footer .footer-social img {
 /* desktop design */
 
 @media only screen and (orientation: landscape) {
-    
+
     header .header-brand {
         display: none;
     }
@@ -291,7 +291,7 @@ footer .footer-social img {
         float: left;
         padding-left: 20px;
     }
-    
+
     header nav ul li a {
         line-height: 85px;
         font-size: 18px;
@@ -323,7 +323,7 @@ footer .footer-social img {
         background: #fff;
         padding-left: 0%
     }
-    
+
     .linkbox-2 {
         background: #ccc;
         padding-left: 20%;
@@ -347,7 +347,7 @@ footer .footer-social img {
     .linkbox-1 a {
         width: 240px;
     }
-    
+
     .linkbox-2 a {
         width: 240px;
     }

@@ -95,9 +95,6 @@ input, select {
 
 /* own code starts here */
 
-
-/* universal styling */
-
 * {
     text-decoration: none;
 }
@@ -121,7 +118,6 @@ p, a {
 
 header {
     background-color: #eeeeee;
-
 }
 
 header p, a {
@@ -149,12 +145,6 @@ header nav ul li a {
     color: antiquewhite;
 }
 
-.index-linkbox h3 {
-    font-family: Quicksand;
-    text-align: center;
-    color: rgb(184, 177, 169);
-}
-
 footer {
     width: calc(100% - 30px);
     padding: 15px 15px;
@@ -166,30 +156,19 @@ footer p {
     color: #000158;
 }
 
-/* mobile design */
-
 header {
     width: 100%;
     height: 90px;
 }
 
 header .header-brand {
+    display: block;
     font-size: 24px;
     font-weight: 700;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding: 15px 0;
-}
-
-header .logo {
-    display: none;
-}
-
-header nav ul {
-    display: block;
-    margin: 0 auto;
-    width: max-content;
+    margin: 0;
+    float: left;
+    padding-left: 40px;
+    margin-top: 30px;
 }
 
 header nav ul li {
@@ -198,17 +177,9 @@ header nav ul li {
     padding: 0 16px;
 }
 
-header nav ul li a {
-    font-size: 18px;
-}
-
-header .header-projects {
-    display: none;
-}
-
 .index-banner {
     width: 100%;
-    height: calc(100vh - 85px);
+    height: calc(100vh - 145px);
     background-image: url('img/bgg.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -230,19 +201,7 @@ header .header-projects {
 .index-banner h2 {
     font-size: 20px;
     font-weight: 500;
-    margin: 5px 0;
-}
-
-.index-linkbox {
-    margin: 15px 15px 0;
-    height: 50px;
-    width: calc(100% - 30px);
-    background-color: #3c3c3c;
-}
-
-.index-linkbox h3 {
-    font-size: 20px;
-    line-height: 50px;
+    margin: 5px 50px;
 }
 
 footer .copyrite {
@@ -263,104 +222,28 @@ footer .footer-social img {
     margin-bottom: 0;
 }
 
-/* desktop design */
+header .logo {
+    display: block;
+    margin: 10px 0;
+    align-content: left;
+    line-height: 10px;
+    padding: 0 15px 0 70px;
+    border-right: 3px solid #1e1e1e;
+    float: left;
+}
 
-@media only screen and (orientation: landscape) {
+header .logo img {
+    height: 70px;
+    width: 70px;
+}
 
-    header .header-brand {
-        display: none;
-    }
+header nav ul {
+    margin: 0;
+    float: right;
+    padding-right: 70px;
+}
 
-    header .logo {
-        display: block;
-        margin: 10px 0;
-        align-content: left;
-        line-height: 10px;
-        padding: 0 15px 0 70px;
-        border-right: 3px solid #1e1e1e;
-        float: left;
-    }
-
-    header .logo img {
-        height: 70px;
-        width: 70px;
-    }
-
-    header nav ul {
-        margin: 0;
-        float: left;
-        padding-left: 20px;
-    }
-
-    header nav ul li a {
-        line-height: 85px;
-        font-size: 18px;
-    }
-
-    header .header-projects {
-        display: block;
-        float: right;
-        font-family: Raleway;
-        font-size: 15px;
-        font-weight: 600;
-    }
-
-    .index-links {
-        height: calc(100vh - 67px);
-    }
-
-    .index-linkbox {
-        margin: 15px 15px 15px;
-        height: 102px;
-        width: 240px;
-    }
-
-    .index-linkbox h3 {
-        line-height: 100px;
-    }
-
-    .linkbox-1 {
-        background: #fff;
-        padding-left: 0%
-    }
-
-    .linkbox-2 {
-        background: #ccc;
-        padding-left: 20%;
-    }
-
-    .linkbox-3 {
-        background: #8f8f8f;
-        padding-left: 40%;
-    }
-
-    .linkbox-4 {
-        background: #7f7f7f;
-        padding-left: 60%;
-    }
-
-    .linkbox-5 {
-        background: #5d5d5d;
-        padding-left: 80%;
-    }
-
-    .linkbox-1 a {
-        width: 240px;
-    }
-
-    .linkbox-2 a {
-        width: 240px;
-    }
-
-    .linkbox-3 a {
-        width: 240px;
-    }
-
-    .linkbox-4 a {
-        width: 240px;
-    }
-
-    .linkbox-5 a {
-        width: 240px;
-    }
+header nav ul li a {
+    line-height: 85px;
+    font-size: 18px;
 }

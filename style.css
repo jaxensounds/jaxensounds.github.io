@@ -273,6 +273,7 @@ header nav ul {
     line-height: 85px;
     font-size: 18px;
     display: block;
+    padding: 0 5px;
 }
 
 nav ul li:hover {

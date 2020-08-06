@@ -130,6 +130,8 @@ header .header-brand {
 
 header nav ul li a {
     font-family: Quicksand;
+    line-height: 85px;
+    font-size: 18px;
 }
 
 .index-banner h1 {
@@ -243,7 +245,44 @@ header nav ul {
     padding-right: 70px;
 }
 
-header nav ul li a {
+.dropbtn {
+    background-color: #eeeeee;
+    color: #111111;
+    line-height: 0;
+    padding: 45px 5px;
+    font-size: 18px;
+    font-family: "Quicksand";
+    border: none;
+}
+
+.projDLDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-family: "Quicksand";
     line-height: 85px;
     font-size: 18px;
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: #bbbbbb;
+}
+
+.projDLDropdown:hover .dropdown-content {
+    display: block;
+}
+
+.projDLDropdown:hover .dropbtn {
+    background-color: #bbbbbb;
 }
